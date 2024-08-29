@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  background-color: rgb(245, 241, 235);
+}
+
+.main-box {
+  display: flex;
+}
+
+.left-box {
+  width: 50%;
+}
+
+.gradient {
+  width: 35rem;
+  height: 53rem;
+  border-radius: 0 0 17rem 17rem;
+  background-image: linear-gradient(to top, #3080d0 50%, rgb(76, 0, 255) 100%);
+  z-index: 1;
+}
+
+.mobile {
+  width: 25rem;
+  height: 40rem;
+  border-radius: 4rem;
+  z-index: 2;
+  background-color: rgb(247, 243, 243);
+  position: relative;
+  top: 12rem;
+  left: 31rem;
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 0 1px 2px rgb(255, 255, 255);
+}
+
+.mobile-top {
+  width: 25rem;
+  height: 6rem;
+  border-radius: 4rem 4rem 0 0;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.mobile-top > .user-name {
+  margin-left: 1rem;
+  float: left;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: aliceblue;
+
+}
+
+.mobile-top > .status {
+  margin-top: 0.9rem;
+  margin-left: 6rem;
+  font-size: 0.8rem;
+  color: aliceblue;
+}
+
+.mobile-top > .user-image {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  float: left;
+}
+
+.msg {
+  width: 16rem;
+  padding: 0.5rem;
+  background-color: rgb(225, 218, 218);
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  color: black;
+  border-radius: 10%;
+}
+
+.msg-images {
+  display: inline;
+  float: right;
+  width: 4rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 15%;
+}
+
+.msg-2 {
+  width: 16rem;
+  padding: 0.5rem;
+  background-color: rgb(85, 77, 233);
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  float: right;
+  color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+
+.input-box {
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  height: 3rem;
+  width: 18rem;
+  border: none;
+  outline: #3080d0;
+  background-color: white;
+  box-shadow: 0 0 1px 2px lightgray;
+}
+
+.send-icon {
+  color: black;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.right-box{
+  width: 50%;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+  padding: 2rem;
+  z-index: 3;
+}
+
+.right-box > h1{
+  font-size: 4rem;
+  color: #4c30a6;
+}
+
+.right-box > p{
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: rgb(149, 148, 148);
+}
+
+
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 930px) {
+  html {
+    font-size: 7px;
+  }
+  
+  .gradient {
+    width: 32rem;
+  }
+  
+  .mobile {
+    width: 25rem;
+    left: 28rem;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .gradient {
+    width: 29rem;
+  }
+  
+  .mobile {
+    width: 25rem;
+    left: 26rem;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+  
+  .gradient {
+    width: 29rem;
+  }
+  
+  .mobile {
+    width: 25rem;
+    left: 18rem;
+  }
+  .main-box {
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-box{
+    width: 100%;
+    margin-top: 2.5rem;
+    text-align: start;
+  }
+
+  
+  
+  
+  
+}
